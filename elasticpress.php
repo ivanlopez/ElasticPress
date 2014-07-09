@@ -18,3 +18,4 @@ require_once( 'classes/class-ep-cron.php' );
 require_once( 'classes/class-ep-ajax.php' );
 require_once( 'classes/class-ep-elasticpress.php' );
 require_once( 'classes/class-ep-query.php' );
+require_once( 'classes/class-ep-search.php' );
