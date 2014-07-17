@@ -8,6 +8,8 @@
  */
 class EP_Search {
 
+	public $search_result;
+
 	/**
 	 * Dummy Constructor
 	 *
@@ -181,7 +183,7 @@ class EP_Search {
 
 		// Do the actual search query!
 		# @todo hook this up to our new search mechanism
-		$this->search_result = $this->search( $es_query_args );
+		$this->search_result = ep_search( $es_query_args, 0 );
 
 		if ( is_wp_error( $this->search_result ) || ! is_array( $this->search_result ) || empty( $this->search_result['hits'] ) || empty( $this->search_result['hits']['hits'] ) ) {
 			$this->found_posts = 0;
